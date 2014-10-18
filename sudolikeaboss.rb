@@ -1,6 +1,6 @@
 require 'formula'
 
-class Packer < Formula
+class Sudolikeaboss < Formula
   homepage 'https://github.com/ravenac95/sudolikeaboss'
   version '0.1.0'
 
