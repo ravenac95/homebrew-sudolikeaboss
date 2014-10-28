@@ -13,4 +13,20 @@ class SudolikeabossWorkaround < Formula
     bin.install Dir['*']
   end
 
+  def caveats; <<-EOS.undent
+    To complete installation don't forget to run:
+
+      $ sudolikeaboss-setup-workaround
+
+    And make sure to configure your iTerm2 Coprocess with this command
+
+       SUDOLIKEABOSS_WEBSOCKET_URI="ws://127.0.0.1:16263/slab" /usr/local/bin/sudolikeaboss
+
+    For more information see:
+
+       https://github.com/ravenac95/sudolikeaboss/issues/1
+
+    EOS
+  end
+
 end
